@@ -65,9 +65,7 @@ pub(crate) fn unsupported_validator(name: &Path) -> syn::Error {
 
             syn::Error::new(
                 span,
-                format!(
-                    "unsupported validator `{name}`, available validators:{DisplayValidators}"
-                ),
+                format!("unsupported validator `{name}`, available validators:{DisplayValidators}"),
             )
         },
     }
